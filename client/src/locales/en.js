@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -112,6 +113,18 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submitted: {
+      title: 'Submitted Orders',
+      empty: 'No restocking orders have been submitted yet.',
+      submittedDate: 'Submitted',
+      itemsCount: 'Items',
+      totalCost: 'Total Cost',
+      leadTime: 'Lead Time (Days)',
+      expectedDelivery: 'Expected Delivery',
+      status: 'Status',
+      statusSubmitted: 'Submitted',
+      loadError: 'Failed to load submitted orders'
+    },
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -185,6 +198,36 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and review recommended restocking orders based on demand forecasts',
+    budget: 'Budget',
+    budgetHint: 'Items are recommended by demand trend, then by forecasted growth, until the budget is used.',
+    recommendations: 'Recommended Items',
+    totalCost: 'Total Cost',
+    remainingBudget: 'Remaining Budget',
+    itemsSelected: 'Items Selected',
+    longestLeadTime: 'Longest Lead Time',
+    days: '{count} days',
+    noItems: 'No items fit within the current budget. Increase the budget to see recommendations.',
+    placeOrder: 'Place Order',
+    placing: 'Placing Order...',
+    successTitle: 'Order placed',
+    successMessage: 'Order {orderNumber} submitted. Expected delivery: {date}.',
+    viewOrders: 'View submitted orders',
+    error: 'Failed to place order',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
     }
   },
 
